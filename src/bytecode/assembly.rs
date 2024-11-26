@@ -21,7 +21,7 @@ use super::ParseError;
 
 /// A structured representation of an EVM bytecode contract which is
 /// either a _legacy contract_, or an EVM Object Format (EOF)
-/// compatiable contract.  Regardless of whether it is legacy or not,
+/// compatible contract.  Regardless of whether it is legacy or not,
 /// a contract is divided into one or more _sections_.  A section is
 /// either a _code section_ or a _data section_.  For EOF contracts,
 /// the _data section_ should also come last.  However, for legacy

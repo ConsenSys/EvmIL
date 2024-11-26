@@ -254,9 +254,9 @@ impl Compiler {
     /// method requires either a `true` target or a `false` target.
     /// If a `true` target is provided then, if the condition
     /// evaluates to something other than `0` (i.e. is `true`),
-    /// control is transfered to this target.  Likewise, if the
+    /// control is transferred to this target.  Likewise, if the
     /// condition evaluates to `0` (i.e. `false`) the control is
-    /// transfered to the `false` target.
+    /// transferred to the `false` target.
     fn translate_conditional(&mut self, expr: &Term, true_lab: Option<&str>, false_lab: Option<&str>) -> Result {
         match expr {
             Term::Binary(BinOp::LogicalAnd, l, r) => {

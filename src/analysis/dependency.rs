@@ -20,7 +20,7 @@ pub struct Dependencies {
 
 impl Dependencies {
     fn new(width: usize) -> Self {
-        // Initially emtpy set of frames to the required width.
+        // Initially empty set of frames to the required width.
         let frames = vec![Vec::new();width];
         Self{frames}
     }
